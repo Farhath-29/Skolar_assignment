@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>SAMPLE FORM</title>
+</head>
+<body>
+    <h2>USER INFORMATION FORM</h2>
+    <form action="/submit"method="post">
+        <label for="name">NAME:</label>
+        <input type="text" id="name"name="name" required>
+        <br><br>
+        <label>GENDER:</label>
+        <input type="radio" id="Male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="Female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="Other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+        <label for="country">COUNTRY:</label>
+        <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="IN">India</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <option value="UK">United Kingdom</option>
+            <option value="AU">Australia</option>
+        </select>
+        <br><br>
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
